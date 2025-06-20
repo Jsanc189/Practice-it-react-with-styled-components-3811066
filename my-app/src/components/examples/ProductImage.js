@@ -1,12 +1,13 @@
-import React from "react";
-const ProductImage = (props) => {
-  const imageUrl = props.imageUrl || "default-image.jpg";
+import React from 'react'
+import { UNSAFE_withComponentProps } from 'react-router-dom';
 
-  return (
-    <div>
-      <img src={imageUrl} alt="Product" />
-    </div>
-  );
+const imageURL = props.ImageURL || 'default-image.jpg'
+const ProductImage = (props) => {
+
+
+  return <div>
+    <img src={props.imageURL} alt="Product" />
+  </div>
 };
 
 export default ProductImage;
